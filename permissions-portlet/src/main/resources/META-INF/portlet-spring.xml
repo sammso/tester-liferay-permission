@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.sohlman.liferay.foobar.service.BarLocalService" class="com.sohlman.liferay.foobar.service.impl.BarLocalServiceImpl" />
+	<bean id="com.sohlman.liferay.foobar.service.BarService" class="com.sohlman.liferay.foobar.service.impl.BarServiceImpl" />
+	<bean id="com.sohlman.liferay.foobar.service.persistence.BarPersistence" class="com.sohlman.liferay.foobar.service.persistence.BarPersistenceImpl" parent="basePersistence" />
+	<bean id="com.sohlman.liferay.foobar.service.FooLocalService" class="com.sohlman.liferay.foobar.service.impl.FooLocalServiceImpl" />
+	<bean id="com.sohlman.liferay.foobar.service.FooService" class="com.sohlman.liferay.foobar.service.impl.FooServiceImpl" />
+	<bean id="com.sohlman.liferay.foobar.service.persistence.FooPersistence" class="com.sohlman.liferay.foobar.service.persistence.FooPersistenceImpl" parent="basePersistence" />
+</beans>
